@@ -214,7 +214,7 @@ export default {
 					port: +port
 				};
 			})() : null;
-			const PROXY_IP = proxyParam ? String(proxyParam) : '3.112.21.102';
+			const PROXY_IP = proxyParam ? String(proxyParam) : 'proxyip.cmliussss.net';
 
 			// auto模式参数顺序（按URL参数位置）
 			const getOrder = () => {
@@ -476,8 +476,6 @@ export default {
 			});
 		}
 
-		const url = new URL(req.url);
-		url.hostname = 'example.com'; 
-		return fetch(new Request(url, req));
+		return Response.redirect('https://t.me/jiliankeji', 302);
 	}
 };
